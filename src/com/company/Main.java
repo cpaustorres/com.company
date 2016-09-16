@@ -20,5 +20,8 @@ public class Main {
         cocheList.add(coche3);
 
         System.out.println("Muestro el coche1:" + cocheList.get(0));
+
+        System.out.println("Muestro el coche2:" + cocheList.get(1));
+
     }
 }
