@@ -23,5 +23,7 @@ public class Main {
 
         System.out.println("Muestro el coche2:" + cocheList.get(1));
 
+        System.out.println("Muestro el coche3:" + cocheList.get(2));
+
     }
 }
