@@ -16,6 +16,7 @@ public class Main {
         seguridadSocial.altaPersona(maria);
         seguridadSocial.altaPersona(carlos);
         seguridadSocial.altaPersona(anna);
+
         System.out.println("Altas a la seguridad social: " + seguridadSocial.obtenerTodas());
 
 

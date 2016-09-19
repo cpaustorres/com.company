@@ -3,6 +3,7 @@ package Practica.Seguridad.Social;
 /**
  * Created by usu26 on 19/09/2016.
  */
+
 public class Persona {
     private String DNI;
     private String NumSegSocial;
