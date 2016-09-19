@@ -1,7 +1,9 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Main {
 
@@ -25,7 +27,14 @@ public class Main {
 
         System.out.println("Muestro el coche3:" + cocheList.get(2));
 
-        System.out.println("asdasdasdasdasd coche3:" );
+
+
+        Map<String, Coche> cocheMap = new HashMap<>();
+
+        cocheMap.put("3453WRD" , coche1);
+
+        System.out.println("Muestro el Coche1 a partir de su matricula " + cocheMap.get("3453WRD"));
+        System.out.println(cocheMap.keySet());
 
     }
 }
