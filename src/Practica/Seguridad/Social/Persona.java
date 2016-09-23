@@ -21,6 +21,7 @@ public class Persona {
         this.salario = salario;
     }
 
+
     public String getDNI() {
         return DNI;
     }

@@ -1,6 +1,7 @@
 package Practica.Seguridad.Social;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -19,15 +20,33 @@ public class SeguridadSocialHashMap {
         }
     }
 
-    public Persona obtenerPersonaPorDNI(String dni){
+    public void bajaPersona(String dni){
+           personaMapDNI.remove(dni);
+    }
 
+
+    public Persona obtenerPersonaPorDNI(String dni){
         // personaMapDNI.keySet();
         // personaMapDNI.values();
         //  personaMapDNI.remove();
-
-
         return personaMapDNI.get(dni);
     }
+    public Persona obtenerPersonaPorNumSS(String numSS){
+        // personaMapnumSS.keySet();
+        // personaMapnumSS.values();
+        //  personaMapnumSS.remove();
+
+        return personaMapDNI.get(numSS);
+    }
+
+    public List<Persona>  obtenerPersonasRangoSalarial (double min, double max , String dni , List Persona ) {
+
+
+        personaMapDNI.get(Persona);
+
+        return null;
+    }
+
 
 }
 

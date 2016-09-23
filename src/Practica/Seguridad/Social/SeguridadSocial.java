@@ -80,6 +80,7 @@ public class SeguridadSocial {
         return aux;
     }
 
+
     public List<Persona> obtenerPersonasMayoresQue(int edad){
         List<Persona> aux = new ArrayList<>();
         for (Persona personaActual : personasList) {
