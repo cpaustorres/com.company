@@ -6,6 +6,11 @@ import Practica.Seguridad.Social.SeguridadSocial;
 public class Main {
     public static void main(String[] args) {
         SeguridadSocial seguridadSocial = new SeguridadSocial();
+        SeguridadSocialHashMap seguridadSocialHM= new SeguridadSocialHashMap();
+
+
+
+
 
         Persona jose = new Persona("39425364H", "111111111", "Jose", "Tomás", 35, 45000.00);
         Persona maria =  new Persona("39425654W", "33333333", "Maria", "Gallego", 55, 61300.20);
@@ -17,19 +22,18 @@ public class Main {
         seguridadSocial.altaPersona(carlos);
         seguridadSocial.altaPersona(anna);
 
-        System.out.println("Altas a la seguridad social: " + seguridadSocial.obtenerTodas());
 
-        System.out.println("Baja a la seguridad social: " + anna);
-        seguridadSocial.bajaPersona(anna.getDni());
-        seguridadSocial.obtenerPersonaPorNumSS("22222222");
-
+        System.out.println("Lista de afiliados a la S.S.: " + seguridadSocialHM.obtenerTodas());
 
         System.out.println("Lista de afiliados a la S.S.: " + seguridadSocial.obtenerTodas());
 
+        System.out.println("Altas a la seguridad social: " + seguridadSocial.obtenerTodas());
 
-        System.out.println("obtenerPersonaPorDNI: " + seguridadSocial.obtenerPersonaPorDNI(jose.getDni()));
+        System.out.println("Baja a la seguridad social: " + anna);
 
-        System.out.println("obtenerPersonaPorNumSS: " + seguridadSocial.obtenerPersonaPorNumSS(maria.getNumSeguridadSocial()));
+        seguridadSocial.obtenerPersonaPorNumSS("22222222");
+
+        System.out.println("obtenerPersonasRangoSalarial: " + seguridadSocialHM.obtenerPersonasRangoSalarial(23000.00, 45000.00));
 
         System.out.println("obtenerPersonasRangoSalarial: " + seguridadSocial.obtenerPersonasRangoSalarial(23000.00, 45000.00));
 

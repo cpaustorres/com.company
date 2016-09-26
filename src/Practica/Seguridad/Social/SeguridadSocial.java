@@ -21,12 +21,10 @@ public class SeguridadSocial {
                 break;
             }
         }
-
         if(!repetida){
             personasList.add(persona);
         }
     }
-
 
     public void bajaPersona(String dni) {
 
