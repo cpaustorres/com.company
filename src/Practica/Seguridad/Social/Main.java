@@ -3,6 +3,7 @@ package Practica.Seguridad.Social;
 import Practica.Seguridad.Social.Persona;
 import Practica.Seguridad.Social.SeguridadSocial;
 import Practica.Seguridad.Social.SeguridadSocialHashMap;
+import Practica.Seguridad.Social.SeguridadSocialTreeMap;
 
 public class Main {
     public static void main(String[] args) {
