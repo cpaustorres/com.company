@@ -2,15 +2,11 @@ package Practica.Seguridad.Social;
 
 import Practica.Seguridad.Social.Persona;
 import Practica.Seguridad.Social.SeguridadSocial;
+import Practica.Seguridad.Social.SeguridadSocialHashMap;
 
 public class Main {
     public static void main(String[] args) {
-        SeguridadSocial seguridadSocial = new SeguridadSocial();
-        SeguridadSocialHashMap seguridadSocialHM= new SeguridadSocialHashMap();
-
-
-
-
+        SeguridadSocialTreeMap seguridadSocial = new SeguridadSocialTreeMap();
 
         Persona jose = new Persona("39425364H", "111111111", "Jose", "Tomás", 35, 45000.00);
         Persona maria =  new Persona("39425654W", "33333333", "Maria", "Gallego", 55, 61300.20);
@@ -23,7 +19,6 @@ public class Main {
         seguridadSocial.altaPersona(anna);
 
 
-        System.out.println("Lista de afiliados a la S.S.: " + seguridadSocialHM.obtenerTodas());
 
         System.out.println("Lista de afiliados a la S.S.: " + seguridadSocial.obtenerTodas());
 
@@ -33,13 +28,11 @@ public class Main {
 
         seguridadSocial.obtenerPersonaPorNumSS("22222222");
 
-        System.out.println("obtenerPersonasRangoSalarial: " + seguridadSocialHM.obtenerPersonasRangoSalarial(23000.00, 45000.00));
+
 
         System.out.println("obtenerPersonasRangoSalarial: " + seguridadSocial.obtenerPersonasRangoSalarial(23000.00, 45000.00));
 
         System.out.println("obtenerPersonasMayoresQue: " + seguridadSocial.obtenerPersonasMayoresQue(25));
-
-
 
     }
 }
