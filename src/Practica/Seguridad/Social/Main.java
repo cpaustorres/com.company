@@ -19,7 +19,6 @@ public class Main {
         seguridadSocial.altaPersona(anna);
 
 
-
         System.out.println("Lista de afiliados a la S.S.: " + seguridadSocial.obtenerTodas());
 
         System.out.println("Altas a la seguridad social: " + seguridadSocial.obtenerTodas());

@@ -1,9 +1,6 @@
 package Practica.Seguridad.Social;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 /**
  Created by usu26 on 23/09/2016.
@@ -12,8 +9,8 @@ import java.util.stream.Collectors;
  */
 public class SeguridadSocialTreeMap {
 
-    private Map<String,Persona> personaMapDNI = new HashMap<>();
-    private Map<String,Persona> personaMapnumSS = new HashMap<>();
+    private Map<String,Persona> personaMapDNI = new TreeMap<>();
+    private Map<String,Persona> personaMapnumSS = new TreeMap<>();
 
     public void altaPersona(Persona persona){
         if(!personaMapDNI.containsKey(persona.getDNI()) && !personaMapnumSS.containsKey(persona.getNumSegSocial())){
