@@ -1,5 +1,6 @@
 package Practica.Seguridad.Social;
 
+
 import Practica.Seguridad.Social.Persona;
 import Practica.Seguridad.Social.SeguridadSocial;
 import Practica.Seguridad.Social.SeguridadSocialHashMap;
