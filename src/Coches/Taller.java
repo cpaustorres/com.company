@@ -1,4 +1,3 @@
-
 package Coches;
 
 import java.util.Comparator;
@@ -27,7 +26,6 @@ public class Taller {
 
     public Set<Persona> obtenerClientes(){
 
-        return
 
     }
 

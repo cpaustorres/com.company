@@ -92,13 +92,12 @@ public class Persona {
     @Override
     public int hashCode() {
         int result;
-        long temp;
+
         result = DNI != null ? DNI.hashCode() : 0;
         result = 31 * result + (NumSegSocial != null ? NumSegSocial.hashCode() : 0);
         result = 31 * result + (nombre != null ? nombre.hashCode() : 0);
         result = 31 * result + (apellidos != null ? apellidos.hashCode() : 0);
         result = 31 * result + edad;
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
         return result;
     }
 }

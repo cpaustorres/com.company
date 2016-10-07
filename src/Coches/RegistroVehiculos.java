@@ -32,7 +32,6 @@ public class RegistroVehiculos {
         }
     }
 
-
     public Coche obtenerVehiculoPrecioMax() {
     Coche cochemax = null ;
         double preciomax= 0;
@@ -44,8 +43,6 @@ public class RegistroVehiculos {
         }
         return cochemax;
     }
-
-
 
     public List<Coche> obtenerVehiculosMarca(String marca) {
         List<Coche> ListaCoches = new ArrayList<>();
