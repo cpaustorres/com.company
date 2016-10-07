@@ -24,5 +24,6 @@ public class MainTaller {
         // debes comprobar que las personas aparecen ordenadas según el criterio especificado en el comparador
         // que se pasa al constructor del TreeMap
         System.out.println(taller.obtenerClientes());
-    }
+    }}
+
 
