@@ -12,6 +12,8 @@ public class Taller {
 
     public Coche registrarReparacion(Persona persona, Coche coche) {
 
+        //CARLOS ESTA MALAMENT
+
         if (!reparaciones.containsKey(persona.getDNI()) && !reparaciones.containsKey(coche.getMatricula())) {
 
             reparaciones.put(persona, coche);
@@ -26,7 +28,7 @@ public class Taller {
 
     public Set<Persona> obtenerClientes(){
 
-
+//CARLOS
     }
 
 }
