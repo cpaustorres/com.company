@@ -32,19 +32,20 @@ public class RegistroVehiculos {
         }
     }
 
-    public Optional<Coche> obtenerVehiculoPrecioMax() {
 
-        List<Persona> aux = new ArrayList<>();
-        for (Persona persona : coches.values()){
-            if (persona.getSalario()>=min && persona.getSalario()<=max){
-                aux.add(persona);
+    public Coche obtenerVehiculoPrecioMax() {
+    Coche cochemax = null ;
+        double preciomax= 0;
+        for (Coche Coche : coches){
+            if (Coche.getPrecio() > preciomax){
+                preciomax = Coche.getPrecio();
+                cochemax = Coche;
             }
         }
-        return aux;
+        return cochemax;
     }
 
 
-    }
 
     public List<Coche> obtenerVehiculosMarca(String marca) {
         List<Coche> ListaCoches = new ArrayList<>();
