@@ -10,15 +10,9 @@ public class Taller {
 
             new TreeMap<>(Comparator.comparing(Persona::getNumSegSocial));
 
-    public Coche registrarReparacion(Persona persona, Coche coche) {
+    public void registrarReparacion(Persona persona, Coche coche) {
 
-        //CARLOS ESTA MALAMENT
-
-        if (!reparaciones.containsKey(persona.getDNI()) && !reparaciones.containsKey(coche.getMatricula())) {
-
-            reparaciones.put(persona, coche);
-        }
-        return null;
+        reparaciones.putIfAbsent(persona, coche);
     }
 
     public Coche obtenerCoche(Persona persona){
@@ -28,7 +22,7 @@ public class Taller {
 
     public Set<Persona> obtenerClientes(){
 
-//CARLOS
+        return reparaciones.keySet();
     }
 
 }

@@ -1,5 +1,9 @@
 package Coches;
 
+import java.util.ArrayList;
+import java.util.List;
+
+
 public class MainVehiculos {
     public static void main(String[] args) {
         Coche Jaguar = new Coche("1234ENG", "Jaguar", "TheRoadIsYours", 200000);
@@ -19,7 +23,21 @@ public class MainVehiculos {
 
         System.out.println(registro.obtenerTodos());
 
-        //CARLOS
+        Coche coche =registro.obtenerVehiculo("4749JAV");
+
+        if(coche!= null) {
+            System.out.println("Coche con matricula 4749JAV: " + coche);
+
+        }
+        List<Coche> cars_list = new ArrayList<>(registro.obtenerVehiculosMarca("Lexus"));
+        for(Coche car_marca: cars_list) {
+            System.out.println("Coche con marca Lexus:" + car_marca);
+        }
+
+        Coche car_max =registro.obtenerVehiculoPrecioMax();
+        if(car_max!=null) {
+            System.out.println("Coche Max precio: " + car_max);
+        }
 
         // registro.obtenerVehiculo("4749JAV").ifPresent(
         //                coche -> System.out.println("Coche con matricula 4749JAV: " + coche)
